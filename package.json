@@ -2,14 +2,19 @@
   "name": "velostate",
   "version": "1.0.0",
   "description": "VeloState is a lightweight, high-performance state management library for React. It provides a simple, minimal syntax for managing global state with support for async updates, history persistence, and caching.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KreativeND/VeloState.git"
   },
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
